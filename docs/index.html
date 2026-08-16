@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="記錄食材標籤、建立食譜，快速換算每份料理熱量。">
+  <title>FoodFat｜我的料理熱量簿</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <button class="brand" data-view="overview">Food<span>Fat</span></button>
+    <nav aria-label="主要選單">
+      <button data-view="overview">今日總覽</button>
+      <button data-view="ingredients">食材庫</button>
+      <button data-view="recipes">我的食譜</button>
+    </nav>
+    <span class="avatar">YU</span>
+  </header>
+  <main id="app"></main>
+  <div id="dialog-root"></div>
+  <script src="./app.js" defer></script>
+</body>
+</html>

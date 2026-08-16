@@ -4,7 +4,10 @@ FoodFat 是料理熱量紀錄工具，可保存食材營養資料來源、建立
 
 ## 公開網站
 
-[開啟 FoodFat](https://foodfat-kitchen-journal.yu810600.chatgpt.site)
+- [GitHub Pages 公開版](https://yu810600-blip.github.io/FoodFat/)
+- [完整資料庫版](https://foodfat-kitchen-journal.yu810600.chatgpt.site)
+
+GitHub Pages 版將個人食材、食譜與烹飪紀錄保存在訪客自己的瀏覽器中。
 
 ## 主要功能
 
