@@ -9,7 +9,7 @@ function esc(value){return String(value??"").replace(/[&<>"']/g,c=>({"&":"&amp;"
 function emoji(name){const pairs=[["蛋","🍳"],["奶","🥛"],["飯","🥣"],["米","🍚"],["雞","🍗"],["肉","🥩"],["魚","🐟"],["菜","🥗"],["蘋果","🍎"],["香蕉","🍌"],["麵包","🍞"],["湯","🍲"],["咖啡","☕"],["豆","🫘"],["菇","🍄"]];return pairs.find(([x])=>name.includes(x))?.[1]||"🍽️"}
 function icon(name){return `<span class="food-icon" role="img" aria-label="${esc(name)}插圖">${emoji(name)}</span>`}
 function heading(label,title){return `<div class="card-heading"><p class="eyebrow">${label}</p><h2>${title}</h2></div>`}
-function cat(){return `<button class="cat-scene" aria-label="摸摸貓咪，看牠和廚具從碗裡飛出來"><img class="cat-still" src="./cat-pounce-transparent-still.png" alt="異色瞳白貓和廚具待在紫色攪拌碗裡"><img class="cat-animation" data-src="./cat-pounce-transparent.webp" alt=""></button>`}
+function cat(){return `<button class="cat-scene" aria-label="摸摸貓咪，看牠和廚具從碗裡飛出來"><img class="cat-still" src="./cat-pounce-transparent-still.png?v=2" alt="異色瞳白貓和廚具待在紫色攪拌碗裡"><img class="cat-animation" data-src="./cat-pounce-transparent.webp?v=2" alt=""></button>`}
 function playCat(scene){if(scene.classList.contains("is-playing"))return;const animation=scene.querySelector(".cat-animation");animation.src=animation.dataset.src;scene.classList.add("is-playing")}
 function stopCat(scene){scene.classList.remove("is-playing");scene.querySelector(".cat-animation").removeAttribute("src")}
 function recipeCalories(recipe){return recipe.items.reduce((sum,item)=>{const food=data.ingredients.find(x=>x.id===item.ingredientId);return sum+(food?food.calories*item.amount/food.referenceAmount:0)},0)}
