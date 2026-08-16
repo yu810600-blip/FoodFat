@@ -22,3 +22,6 @@ article,.library,.data-card{background:rgba(255,251,255,.78);border-color:rgba(1
 .modal-backdrop{background:rgba(36,15,60,.72);backdrop-filter:blur(7px)}.modal{background:linear-gradient(145deg,#fffaff,#eee1fa);border:1px solid rgba(226,190,92,.45);box-shadow:0 30px 90px rgba(28,9,48,.4)}
 .form-grid input,.form-grid select,.form-grid textarea,.item-row input,.item-row select{border-color:#ceb7dd;background:rgba(255,255,255,.8);color:var(--ink)}
 .form-grid input:focus,.form-grid select:focus,.form-grid textarea:focus,.item-row input:focus,.item-row select:focus{outline:2px solid rgba(199,153,47,.45);border-color:#b785c9}
+.food-icon{position:relative;overflow:hidden;font-size:23px;text-shadow:0 2px 8px rgba(67,32,93,.12);box-shadow:inset 0 1px 0 rgba(255,255,255,.75),0 8px 18px rgba(75,37,103,.12)}
+.food-icon::after{content:"";position:absolute;inset:5px;border:1px solid rgba(255,255,255,.52);border-radius:8px;pointer-events:none}
+.data-card{grid-template-columns:80px 1fr}.data-card .food-icon{width:72px;height:72px;border-radius:20px;font-size:36px}.data-card .food-icon::after{border-radius:15px}
